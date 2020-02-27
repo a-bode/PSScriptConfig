@@ -2,7 +2,7 @@
 
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
-$modulePath = /home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig
+$modulePath = "/home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig"
 
 $nuGetApiKey = $env:PSGALLERY_TOKEN
 
