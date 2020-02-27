@@ -1,7 +1,7 @@
 
 
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-Get-ChildItem /home/runner/work/PSScriptConfig
+Get-ChildItem /home/runner/work/PSScriptConfig/PSScriptConfig 
 Import-Module /home/runner/work/PSScriptConfig/PSScriptConfig -Force
 $modulePath = (Get-Module PSScriptConfig).path
 
