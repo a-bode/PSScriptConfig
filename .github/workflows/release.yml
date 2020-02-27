@@ -13,4 +13,4 @@ jobs:
         PSGALLERY_TOKEN: ${{secrets.PSGALLERY_TOKEN}}
       shell: pwsh
       run: | 
-        .\.github\workflows\Deploy-PSScriptConfig.ps1
+        ./.github/workflows/Deploy-PSScriptConfig.ps1
