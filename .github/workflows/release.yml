@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: Deploy to PSGallery
-    env:
-      PSGALLERY_TOKEN: ${{secrets.PSGALLERY_TOKEN}}
-    run: .github\workflows\Deploy-PSScriptConfig.ps1
-    shell: pwsh
+      uses: actions/checkout@v2
+      env:
+        PSGALLERY_TOKEN: ${{secrets.PSGALLERY_TOKEN}}
+      run: .github\workflows\Deploy-PSScriptConfig.ps1
+      shell: pwsh
