@@ -1,9 +1,8 @@
 
 
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-Get-ChildItem /home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig
-Import-Module /home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig -Force
-$modulePath = (Get-Module PSScriptConfig).path
+
+$modulePath = /home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig
 
 $nuGetApiKey = $env:PSGALLERY_TOKEN
 
