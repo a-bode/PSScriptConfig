@@ -9,10 +9,10 @@ jobs:
 
     steps:
     - name: Checkout
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       with:
         path: main
-        
+
     - name: Deploy to PSGallery
       env:
         PSGALLERY_TOKEN: ${{secrets.PSGALLERY_TOKEN}}
