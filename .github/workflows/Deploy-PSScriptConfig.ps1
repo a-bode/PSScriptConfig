@@ -1,4 +1,6 @@
   
+Write-Host 'Im in'
+
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 $nuGetApiKey = $env:PSGALLERY_TOKEN
