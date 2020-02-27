@@ -9,7 +9,6 @@ jobs:
 
     steps:
     - name: Deploy to PSGallery
-      uses: actions/checkout@v2
       env:
         PSGALLERY_TOKEN: ${{secrets.PSGALLERY_TOKEN}}
       run: .github\workflows\Deploy-PSScriptConfig.ps1
