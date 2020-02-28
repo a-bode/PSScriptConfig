@@ -1,4 +1,4 @@
-![Build Status](https://github.com/abodePS/PSScriptConfig/workflows/CI/badge.svg)
+![Build Status](https://github.com/abodePS/PSScriptConfig/workflows/PublishToPSGallery/badge.svg)
 
 # PSScriptConfig
 
