@@ -1,7 +1,7 @@
 $modulePath = "/home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig"
 $nuGetApiKey = $env:PSGALLERY_TOKEN
 
-Set-PSRepository -Default -InstallationPolicy Trusted
+Set-PSRepository PSGallery -InstallationPolicy Trusted
 
 
 #Install current version from PSGallery
@@ -11,7 +11,6 @@ Import-Module PSScriptConfig
 
 #Generate new version
 [version]$newVersion = "{0}.{1}.{2}" -f $version.Major, $version.Minor, ($version.Build +1)
-$manifest = Import-PowerShellDataFile (Join-Path $modulePath -ChildPath "PSScriptConfig.psd1")
 Update-ModuleManifest -Path (Join-Path $modulePath -ChildPath "PSScriptConfig.psd1") -ModuleVersion $newVersion
 
 
