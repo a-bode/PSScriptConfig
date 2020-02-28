@@ -7,7 +7,7 @@ Get-PSRepository -Name psgallery |Set-PSRepository -InstallationPolicy Trusted
 
 #Install current version from PSGallery
 Install-Module -Name PSScriptConfig -Force
-Import-Module PSScriptConfig -foce
+Import-Module PSScriptConfig -Force
 [version]$version = (Get-Module -Name PSScriptConfig).Version
 
 #Generate new version
