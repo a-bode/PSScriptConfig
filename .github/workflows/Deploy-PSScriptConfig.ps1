@@ -5,7 +5,7 @@ Set-PSRepository PSGallery -InstallationPolicy Trusted
 
 
 #Install current version from PSGallery
-Install-Module -Name PSScriptConfig -AllowPrerelease
+Install-Module -Name PSScriptConfig
 Import-Module PSScriptConfig
 [version]$version = (Get-Module -Name PSScriptConfig).Version
 
