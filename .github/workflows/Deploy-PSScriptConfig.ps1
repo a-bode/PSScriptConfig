@@ -1,7 +1,8 @@
 $modulePath = "/home/runner/work/PSScriptConfig/PSScriptConfig/main/PSScriptConfig"
 $nuGetApiKey = $env:PSGALLERY_TOKEN
 
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+Register-PSRepository -Default -InstallationPolicy Trusted
+
 
 #Install current version from PSGallery
 Install-Module -Name PSScriptConfig -AllowPrerelease
