@@ -14,7 +14,7 @@ $nuGetApiKey = $env:PSGALLERY_TOKEN
 #Generate new version
 # [version]$newVersion = "{0}.{1}.{2}" -f $version.Major, $version.Minor, ($version.Build +1)
 
-
+Set-Location '/home/runner/work/PSScriptConfig/PSScriptConfig/main'
 [version]$newVersion = (git tag | tail -1) -replace 'v'
 
 
