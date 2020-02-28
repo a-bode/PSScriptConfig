@@ -30,7 +30,7 @@
     Copyright = '(c) atwork deutschland GmbH. All rights reserved.'
     
     # Description of the functionality provided by this module
-    Description = 'Save recurring script configurations in your profile and have them always available via the $PSSCriptConfig variable.'
+    Description = 'Save recurring script configurations in your PowerShell profile and have them always available via the $PSSCriptConfig variable.'
     
     # Minimum version of the PowerShell engine required by this module
     # PowerShellVersion = ''
@@ -99,16 +99,16 @@
             # Tags = @()
     
             # A URL to the license for this module.
-            # LicenseUri = ''
+            LicenseUri = 'https://github.com/abodePS/PSScriptConfig/blob/master/LICENSE'
     
             # A URL to the main website for this project.
-            # ProjectUri = ''
+            ProjectUri = 'https://github.com/abodePS/PSScriptConfig'
     
             # A URL to an icon representing this module.
             # IconUri = ''
     
             # ReleaseNotes of this module
-            # ReleaseNotes = ''
+            ReleaseNotes = 'https://github.com/abodePS/PSScriptConfig/releases'
     
             # Prerelease string of this module
             #Prerelease = '-alpha'

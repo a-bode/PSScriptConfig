@@ -2,7 +2,7 @@
 
 # PSScriptConfig
 
-Save recurring script configurations in your profile and have them always available via the $PSSCriptConfig variable.
+Save recurring script configurations in your PowerShell profile and have them always available via the $PSSCriptConfig variable.
 
 # Installation
 
@@ -12,8 +12,8 @@ Import-Module PSScriptConfig
 Register-PSScriptConfig
 ```
 
-
-# Add Configuration
+# Configuration 
+## Add Configuration
 
 ```powershell
 New-PSScriptConfig -Key mailRelay -Value mail.contoso.com
@@ -27,7 +27,7 @@ New-PSScriptConfig -Key mailRelayPort -Value 25
 New-PSScriptConfig -Key mailFrom -Value admin@contoso.com
 ```
 
-# Get Configurations
+## Get Configurations
 ```powershell
 $PSScriptConfig
 ```
@@ -36,7 +36,17 @@ $PSScriptConfig
 $PSScriptConfig.mailRelay
 ```
 
-# Remove Configuration
+## Change Configuration
+For the current session only.
+```powershell
+$PSScriptConfig.mailRelay = "smtp.contoso.com"
+```
+Save permanently.
+```powershell
+Save-PSScriptConfig
+```
+
+## Remove Configuration
 
 ```powershell
 Remove-PSScriptConfig -Key mailRelay

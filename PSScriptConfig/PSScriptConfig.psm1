@@ -18,7 +18,7 @@ function Get-PSScriptConfig() {
     $configFilePath = join-path (Split-Path $profile) -childpath '.PSScriptConfig'
 
     if (!(Test-Path $configFilePath)) {
-        new-item -ItemType File -Force -Path $configFilePath
+        new-item -ItemType File -Force -Path $configFilePath|Out-Null
         $config = @{
             lastChangeDateTime = (Get-Date -Format s)
         }
