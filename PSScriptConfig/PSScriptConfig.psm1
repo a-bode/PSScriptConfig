@@ -33,7 +33,7 @@ function Get-PSScriptConfig() {
 function New-PSScriptConfig{
 param(
     [String]$Key,
-    [String]$Value
+    $Value
 )
 
     $PSScriptConfig |Add-Member -MemberType NoteProperty -Name $Key -Value $Value
@@ -55,4 +55,4 @@ function Remove-PSScriptConfig($key){
 $global:PSScriptConfig = Get-PSScriptConfig
 $configFilePath = join-path (Split-Path $profile) -childpath '.PSScriptConfig'
 
-Export-ModuleMember -Function Register-PSScriptConfig , New-PSScriptConfig, Save-PSScriptConfig,Remove-PSScriptConfig
+Export-ModuleMember -Function Register-PSScriptConfig , New-PSScriptConfig, Save-PSScriptConfig,Remove-PSScriptConfig, Get-PSScriptConfig
